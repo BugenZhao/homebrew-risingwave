@@ -1,10 +1,9 @@
 class Risingwave < Formula
   desc "Distributed SQL database for stream processing"
   homepage "https://github.com/risingwavelabs/risingwave"
-  url "https://github.com/risingwavelabs/risingwave/archive/refs/tags/v2.5.1.tar.gz"
-  sha256 "e50ecbdbc70a3c1d17c5369f0d64c9091efb9c42430ce688ab4bfce69f54962c"
+  url "https://github.com/risingwavelabs/risingwave/archive/refs/tags/v2.7.1.tar.gz"
+  sha256 "c775587e3a95a5ae823e3271a45bd9de2893cc75cdeb3162ec0aa117e7099c35"
   license "Apache-2.0"
-  revision 1
   head "https://github.com/risingwavelabs/risingwave.git", branch: "main"
 
   bottle do
@@ -23,8 +22,8 @@ class Risingwave < Formula
   depends_on "python@3.12"
 
   resource "connector" do
-    url "https://github.com/risingwavelabs/risingwave/releases/download/v2.5.1/risingwave-connector-v2.5.1.tar.gz"
-    sha256 "af582af8bc790f2b66d7d8feef84cb056e0e46d8c16b71440a60d23d9e3edd63"
+    url "https://github.com/risingwavelabs/risingwave/releases/download/v2.7.1/risingwave-connector-v2.7.1.tar.gz"
+    sha256 "9ac2d6df7de913390717d0124ac4e0ad6c214430a3d7ea52578c5de988fb84a8"
   end
 
   # Mitigate "argument list too long" error when linking.
